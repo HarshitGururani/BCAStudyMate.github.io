@@ -1,0 +1,304 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #f2eef8;
+  color: #333333;
+}
+.hero-section {
+  padding: 2rem 0 0rem 0;
+}
+.hero {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+  gap: 3.6rem;
+  display: grid;
+  grid-template-columns: 65fr 30fr;
+  align-items: center;
+}
+.hero-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-img {
+  width: 70%;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.4rem;
+  padding: 3.4rem 0 4rem 4.5rem;
+  transition: all 0.5s;
+  position: relative;
+}
+.sticky .main-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: white;
+  z-index: 999;
+  background-color: rgba(225, 225, 225, 0.97);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.06);
+}
+.logo {
+  height: 3.5rem;
+}
+.heading-primary {
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.9px;
+  margin-bottom: 3.2rem;
+  color: #333333;
+}
+.highlight {
+  color: #624390;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 2.8rem;
+  border-radius: 9px;
+  transition: all 0.3s;
+
+  /* only for .btn */
+  border: none;
+  cursor: pointer;
+
+  background-image: linear-gradient(90deg, #624390 0%, #b58df3 100%);
+  color: #fff;
+}
+.btn:hover,
+.btn:active {
+  transform: translateY(-0.5rem);
+}
+
+a {
+  text-decoration: none;
+}
+.nav-bar {
+  display: flex;
+  gap: 2.2rem;
+  list-style: none;
+}
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+  color: #fff;
+}
+.nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a370f0;
+  color: #fff;
+  border: none;
+  padding: 1rem 2.3rem;
+  border-radius: 0.9rem;
+  gap: 1.2rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.btn-contact {
+  padding: 1.2rem 3rem;
+  border: inset 1.5px solid rgba(0, 0, 0, 0.75);
+  box-shadow: rgba(0, 0, 0, 0.55);
+  background-color: #fff;
+  font-size: 600;
+  color: #333333;
+  transition: all 0.5s;
+  margin-right: 3rem;
+}
+.btn-contact:hover,
+.btn-contact:active {
+  background-color: #a370f0;
+  color: #fff;
+  border: none;
+}
+.nav-icon {
+  height: 22px;
+}
+/* SEMESTER 1 */
+.semesters {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.margin-left {
+  margin-left: 1.5rem;
+}
+.margin-right {
+  margin-right: 1rem;
+}
+.grid-4-col {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.4rem;
+}
+.card {
+  height: 35rem;
+  width: 24rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  transition: all 0.5s;
+  /* border: 1px solid transparent; */
+}
+.card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+.image {
+  height: 250px;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-bottom: 1px solid #111827;
+}
+.img {
+  object-fit: contain;
+  width: 100%;
+}
+.title {
+  color: #111827;
+  font-size: 1.8rem;
+  line-height: 1.75rem;
+  /* margin-bottom: 0.3rem; */
+  font-weight: 600;
+  text-align: center;
+}
+
+.bca {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.bca-text {
+  font-size: 2rem;
+  background-color: #312248;
+  padding: 1rem 1.8rem;
+  border-radius: 50px;
+}
+.pdf-btn {
+  height: 4rem;
+  width: 16rem;
+  border-radius: 0.9rem;
+  border: none;
+  background-color: #af9ccb;
+  color: #fff;
+  cursor: pointer;
+}
+.pdf-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pdf-icon {
+  height: 3rem;
+  width: 3rem;
+  fill: #fff;
+}
+footer {
+  background-color: #624390;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #fff;
+}
+.github {
+  margin: 0 30rem;
+  display: flex;
+  align-items: center;
+}
+.github-logo {
+  height: 5rem;
+  margin-top: 1rem;
+}
+.github a {
+  text-decoration: none;
+  color: #fff;
+}
+.darr {
+  font-size: larger;
+  padding-left: 0.5rem;
+}
+
+/* ***************************************** 
+              Media query
+********************************************/
+/* @media only screen and (max-width: 140rem) {
+  .hero {
+    max-width: 130rem;
+  }
+  .heading-primary {
+    font-size: 4.8rem;
+  }
+  .main-nav {
+    padding-left: 5.2rem;
+  }
+}
+@media only screen and (max-width: 124rem) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.5rem;
+  }
+  .hero-img-box {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+} */
