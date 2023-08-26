@@ -53,6 +53,7 @@ body {
 }
 .hero-img {
   width: 70%;
+  height: auto;
 }
 .main-nav {
   display: flex;
@@ -176,6 +177,7 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3.4rem;
+  margin-left: 4rem;
 }
 .card {
   height: 35rem;
@@ -209,6 +211,7 @@ a {
 .img {
   object-fit: contain;
   width: 100%;
+  /* height: auto; */
 }
 .title {
   color: #111827;
@@ -274,31 +277,3 @@ footer {
   font-size: larger;
   padding-left: 0.5rem;
 }
-
-/* ***************************************** 
-              Media query
-********************************************/
-/* @media only screen and (max-width: 140rem) {
-  .hero {
-    max-width: 130rem;
-  }
-  .heading-primary {
-    font-size: 4.8rem;
-  }
-  .main-nav {
-    padding-left: 5.2rem;
-  }
-}
-@media only screen and (max-width: 124rem) {
-  .hero {
-    max-width: 120rem;
-  }
-  .heading-primary {
-    font-size: 4.5rem;
-  }
-  .hero-img-box {
-    display: flex;
-    align-items: end;
-    justify-content: end;
-  }
-} */

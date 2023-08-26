@@ -1,0 +1,57 @@
+/* ***************************************** 
+              Media query
+********************************************/
+@media (max-width: 120em) {
+  .hero {
+    max-width: 150rem;
+  }
+  .heading-primary {
+    font-size: 4.8rem;
+  }
+}
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4rem;
+  }
+  .main-nav {
+    padding-left: 5.2rem;
+  }
+  /* .grid-4-col {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem; 
+  } */
+}
+/* below 1200px landscape tablets */
+@media (max-width: 75em) {
+  .card {
+    height: 30rem;
+    width: 24rem;
+  }
+  .card,
+  .margin-left {
+    margin-left: 0;
+  }
+  .image {
+    height: 200px;
+    width: 180px;
+    margin: 0 auto;
+  }
+  .img {
+    padding-top: 0.6rem;
+  }
+  .title {
+    margin-top: 0.5rem;
+  }
+  .pdf-btn {
+    margin-top: 1rem;
+  }
+  .main-nav {
+    height: 2rem;
+    padding: 3.4rem 0 3rem 2rem;
+    transition: all 0.5s;
+    position: relative;
+  }
+}
